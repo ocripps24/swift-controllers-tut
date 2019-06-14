@@ -14,6 +14,9 @@
 		635F19BC22B3D50100BB5F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635F19BA22B3D50100BB5F27 /* LaunchScreen.storyboard */; };
 		635F19C722B3D50100BB5F27 /* TabithaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635F19C622B3D50100BB5F27 /* TabithaTests.swift */; };
 		635F19D222B3D50100BB5F27 /* TabithaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635F19D122B3D50100BB5F27 /* TabithaUITests.swift */; };
+		635F19E022B3DBC400BB5F27 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635F19DF22B3DBC400BB5F27 /* ProfileViewController.swift */; };
+		635F19E222B3DE5800BB5F27 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635F19E122B3DE5800BB5F27 /* MainTabBarController.swift */; };
+		635F19E422B3DE6900BB5F27 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635F19E322B3DE6900BB5F27 /* ProfileNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		635F19CD22B3D50100BB5F27 /* TabithaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabithaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635F19D122B3D50100BB5F27 /* TabithaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabithaUITests.swift; sourceTree = "<group>"; };
 		635F19D322B3D50100BB5F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635F19DF22B3DBC400BB5F27 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		635F19E122B3DE5800BB5F27 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		635F19E322B3DE6900BB5F27 /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				635F19B822B3D50100BB5F27 /* Assets.xcassets */,
 				635F19BA22B3D50100BB5F27 /* LaunchScreen.storyboard */,
 				635F19BD22B3D50100BB5F27 /* Info.plist */,
+				635F19DF22B3DBC400BB5F27 /* ProfileViewController.swift */,
+				635F19E122B3DE5800BB5F27 /* MainTabBarController.swift */,
+				635F19E322B3DE6900BB5F27 /* ProfileNavigationController.swift */,
 			);
 			path = Tabitha;
 			sourceTree = "<group>";
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635F19E022B3DBC400BB5F27 /* ProfileViewController.swift in Sources */,
 				635F19B422B3D4FF00BB5F27 /* ViewController.swift in Sources */,
+				635F19E222B3DE5800BB5F27 /* MainTabBarController.swift in Sources */,
 				635F19B222B3D4FF00BB5F27 /* AppDelegate.swift in Sources */,
+				635F19E422B3DE6900BB5F27 /* ProfileNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
