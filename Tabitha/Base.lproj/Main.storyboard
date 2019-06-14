@@ -33,7 +33,36 @@
                     <view key="view" contentMode="scaleToFill" id="TZb-Mi-XUs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1H-nz-1mg">
+                                <rect key="frame" x="20" y="336" width="374" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="WnN-45-fKq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntb-Bs-lZR">
+                                <rect key="frame" x="20" y="417" width="374" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="mw5-fB-b1m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p1H-nz-1mg" firstAttribute="top" secondItem="K4U-B6-1W0" secondAttribute="top" constant="248" id="2Bc-9s-h1u"/>
+                            <constraint firstItem="Ntb-Bs-lZR" firstAttribute="top" secondItem="p1H-nz-1mg" secondAttribute="bottom" constant="19" id="6Ft-fK-r4a"/>
+                            <constraint firstItem="K4U-B6-1W0" firstAttribute="trailing" secondItem="Ntb-Bs-lZR" secondAttribute="trailing" constant="20" id="6PN-Mh-Y9A"/>
+                            <constraint firstItem="p1H-nz-1mg" firstAttribute="leading" secondItem="K4U-B6-1W0" secondAttribute="leading" constant="20" id="7F0-MJ-VW4"/>
+                            <constraint firstItem="K4U-B6-1W0" firstAttribute="bottom" secondItem="Ntb-Bs-lZR" secondAttribute="bottom" constant="334" id="T8h-MV-N6j"/>
+                            <constraint firstItem="K4U-B6-1W0" firstAttribute="trailing" secondItem="p1H-nz-1mg" secondAttribute="trailing" constant="20" id="WQi-pI-tc6"/>
+                            <constraint firstItem="Ntb-Bs-lZR" firstAttribute="leading" secondItem="K4U-B6-1W0" secondAttribute="leading" constant="20" id="qOQ-Lx-Mwj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K4U-B6-1W0"/>
                     </view>
                     <navigationItem key="navigationItem" id="8ub-Lz-qMu">
@@ -43,6 +72,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailLabel" destination="p1H-nz-1mg" id="kwS-iv-XV6"/>
+                        <outlet property="passwordLabel" destination="Ntb-Bs-lZR" id="bps-IY-JKp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02s-6W-PJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

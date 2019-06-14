@@ -11,6 +11,9 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    
     var email: String?
     var password: String?
     
