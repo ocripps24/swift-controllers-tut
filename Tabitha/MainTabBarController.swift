@@ -11,6 +11,9 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
     
+    var email: String?
+    var password: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

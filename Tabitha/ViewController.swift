@@ -22,6 +22,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginTapped(_ sender: Any) {
+        // NOTE: We are opting to do this through the storyboard seques instead of programmatically through here
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let mainTabBarController = segue.destination as? MainTabBarController {
+            mainTabBarController.email = emailTextField.text
+            mainTabBarController.password = passwordTextField.text
+        }
     }
     
 }

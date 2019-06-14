@@ -19,6 +19,9 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailLabel.text = email
+        passwordLabel.text = password
     }
     
     @IBAction func logout(_ sender: Any) {
