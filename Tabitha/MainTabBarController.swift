@@ -16,6 +16,22 @@ class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let viewControllers = viewControllers else {
+            return
+        }
+        
+        for viewController in viewControllers {
+            
+            if let profileNavigationController = viewController as? ProfileNavigationController {
+                
+                if let profileViewController = profileNavigationController.viewControllers.first as? ProfileViewController {
+                    profileViewController.email = email
+                    profileViewController.password = password
+                }
+            }
+        }
+        
     }
     
 }
